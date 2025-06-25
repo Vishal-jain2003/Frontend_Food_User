@@ -1,0 +1,66 @@
+.my-orders-container {
+  background: linear-gradient(to right, #fff8dc, #fefefe);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 1rem 1rem 0 0;
+  background: linear-gradient(135deg, #ffd95a, #ffe793);
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.table td {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #fdf4d9;
+}
+
+.food-img {
+  height: 56px;
+  width: 56px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.order-status {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.order-status.preparing {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.order-status.pending {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.no-orders {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #888;
+  padding: 2rem 0;
+}

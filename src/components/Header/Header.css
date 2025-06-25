@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  padding: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  border-radius: 0.8rem;
+  color: white;
+  background-image: url("../../assets/header.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay just for text contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.189); /* Darken image */
+  z-index: 1;
+  border-radius: 0.8rem;
+}
+
+/* Ensure content appears above overlay */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideInUp 1s ease-in-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}
