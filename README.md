@@ -65,11 +65,7 @@ An intelligent full-stack food ordering web application inspired by real-world r
 
 ---
 
-## 📸 Screenshots
 
-> *(Add screenshots here for Home, ChefAI, Admin Panel, Payment Page, etc.)*
-
----
 
 ## 🛠️ Run Locally
 
